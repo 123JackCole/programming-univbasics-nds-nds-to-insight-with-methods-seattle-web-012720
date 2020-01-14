@@ -30,6 +30,7 @@ def gross_for_director(director_data)
     outer_index += 1
   end
   output_hash
+  director_data
 
 end
 
