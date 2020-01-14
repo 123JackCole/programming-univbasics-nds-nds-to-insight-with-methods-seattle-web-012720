@@ -24,7 +24,7 @@ def gross_for_director(director_data)
       inner_len = director_data[row_index][column_index].count
       inner_index = 0
       while inner_index < inner_len do
-        grand_total += director_data[row_index][column_index][inner_index][:price]
+        grand_total += director_data[row_index][column_index][inner_index][:worldwide_grosses]
         inner_index += 1
       end
       column_index += 1
