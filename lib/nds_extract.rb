@@ -16,7 +16,6 @@ end
 # using director_data as input
 def gross_for_director(director_data)
 
-  output_hash = {}
   outer_index = 0
   gross_total = 0
   while outer_index < director_data.count do
