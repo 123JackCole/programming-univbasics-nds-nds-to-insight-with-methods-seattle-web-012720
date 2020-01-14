@@ -17,38 +17,40 @@ end
 def gross_for_director(director_data)
 
 #  output_hash = {}
-  outer_index = 0
-  while outer_index < director_data.count do
-    name = director_data[outer_index][:name]
-    inner_index = 0
-    gross_total = 0
-    while inner_index < director_data[outer_index][:movies].count do
-      gross_total += director_data[outer_index][:movies][inner_index][:worldwide_gross]
-      inner_index += 1
-    end
-    output_hash[name] = gross_total
-    outer_index += 1
-  end
-  output_hash
+#  outer_index = 0
+#  while outer_index < director_data.count do
+#    name = director_data[outer_index][:name]
+#    inner_index = 0
+#    gross_total = 0
+#    while inner_index < director_data[outer_index][:movies].count do
+#      gross_total += director_data[outer_index][:movies][inner_index][:worldwide_gross]
+#      inner_index += 1
+#    end
+#    output_hash[name] = gross_total
+#    outer_index += 1
+#  end
+#  output_hash
 
+  output_hash = {}
   grand_total = 0
   row_index = 0
-  while row_index < vm.length do
+  while row_index < director_data.length do
     column_index = 0
-    while column_index < vm[row_index].length do
-      inner_len = vm[row_index][column_index].length
+    while column_index < director_data[row_index].length do
+      inner_len = director_data[row_index][column_index].length
       inner_index = 0
       while inner_index < inner_len do
         # Explanation!
-        # vm[row][column][spinner]
+        # director_data[row][column][spinner]
         # spinner is full of Hashes with keys :price and :name
-        grand_total += vm[row_index][column_index][inner_index][:price]
+        grand_total += director_data[row_index][column_index][inner_index][:price]
         inner_index += 1
       end
       column_index += 1
     end
     row_index += 1
   end
+  output_hash
 
 end
 
