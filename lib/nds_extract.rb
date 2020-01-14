@@ -5,8 +5,11 @@ require 'directors_database'
 # using director_data as input
 def gross_for_director(director_data)
 
-  outer_index = 0
+  
   p director_data
+
+
+  index = 0
   while outer_index < director_data.count do
     name = director_data[outer_index][:name]
     gross_total = 0
