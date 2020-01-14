@@ -17,19 +17,19 @@ end
 def gross_for_director(director_data)
 
   output_hash = {}
-    outer_index = 0
-    while outer_index < director_data.count do
-      name = nds[outer_index][:name]
-      inner_index = 0
-      gross_total = 0
-      while inner_index < director_data[outer_index][:movies].count do
-        gross_total += [outer_index][:movies][inner_index][:worldwide_gross]
-        inner_index += 1
-      end
-      output_hash[name] = gross_total
-      outer_index += 1
+  outer_index = 0
+  while outer_index < director_data.count do
+    name = director_dataame]
+    inner_index = 0
+    gross_total = 0
+    while inner_index < director_dataamees].count do
+      gross_total += nds[outer_index][:movies][inner_index][:worldwide_gross]
+      inner_index += 1
     end
-    output_hash
+    output_hash[name] = gross_total
+    outer_index += 1
+  end
+  output_hash
 
 end
 
