@@ -18,7 +18,7 @@ def gross_for_director(director_data)
 
   grand_total = 0
   row_index = 0
-  while row_index < director_data.length do
+  while row_index < director_data.count do
     column_index = 0
     while column_index < director_data[row_index].count do
       inner_len = director_data[row_index][column_index].count
