@@ -20,7 +20,7 @@ def gross_for_director(director_data)
   row_index = 0
   while row_index < director_data.length do
     column_index = 0
-    while column_index < director_data[row_index].length do
+    while column_index < director_data[row_index].count do
       inner_len = director_data[row_index][column_index].length
       inner_index = 0
       while inner_index < inner_len do
