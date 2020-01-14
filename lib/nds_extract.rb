@@ -29,8 +29,7 @@ def gross_for_director(director_data)
     output_hash[name] = gross_total
     outer_index += 1
   end
-  #output_hash
-  director_data
+  output_hash
 
 end
 
